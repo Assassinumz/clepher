@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Side } from "../components/Navbar/Side";
 
 import MenuItem from "@mui/material/MenuItem";
-import { InputLabel } from "@mui/material";
+
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import Menu from "@mui/material/Menu";
 import Checkbox from "@mui/material/Checkbox";

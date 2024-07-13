@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Side } from "../components/Navbar/Side";
 
 import { instance } from "../services/instance";
@@ -48,7 +48,10 @@ export const CoreQuote = () => {
 								{data &&
 									Object.keys(data).map((item, k) => {
 										return (
-											<div className="flex items-center mb-2">
+											<div
+												key={k}
+												className="flex items-center mb-2"
+											>
 												<p className="w-32">{item}</p>
 												<p className="w-20">
 													{data[item]}

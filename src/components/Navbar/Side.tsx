@@ -1,12 +1,9 @@
-import React, { useEffect } from "react";
-
 import { Link, useLocation } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 
 export const Side = () => {
 	const location = useLocation();
 
-	useEffect(() => {}, [location]);
 	return (
 		<div className="w-[20%] min-w-[20%] bg-slate-800 !text-white flex flex-col p-5 h-full rounded-r-2xl overflow-auto">
 			<ToastContainer />
